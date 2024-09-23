@@ -1,0 +1,29 @@
+body {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fffefe;
+    font-family: Arial, Helvetica, Courier New monospace;   
+   }
+
+h1 {
+    text-align: left; /* valeurs possibles : left | right | center | justify */
+    color: rgb(255, 0, 0);
+    font-size: 2em; /* 1em : taille par défaut de la police de caractères défini sur le navigateur */
+    font-style: normal; /* valeurs possibles : normal | italic */
+    font-weight: bold; /* valeurs possibles : normal | bold */
+    text-decoration: blink; /* valeurs possibles : none | underline | overline | line-through | blink 
+   */
+    text-transform: capitalize; /*text-transform: none | capitalize | uppercase | lowercase */ 
+    line-height: 200%; /*valeurs possibles : normal | nombre | % */ 
+   }
+
+   h2 {
+    text-align: left; /* valeurs possibles : left | right | center | justify */
+    color: rgb(2, 54, 0);
+    font-size: 2em; /* 1em : taille par défaut de la police de caractères défini sur le navigateur */
+    font-style: normal; /* valeurs possibles : normal | italic */
+    font-weight: bold; /* valeurs possibles : normal | bold */
+    text-decoration: none; /* valeurs possibles : none | underline | overline | line-through | blink 
+   */
+    text-transform: capitalize; /*text-transform: none | capitalize | uppercase | lowercase */ 
+    line-height: 200%; /*valeurs possibles : normal | nombre | % */ 
+   }
