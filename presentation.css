@@ -1,29 +1,57 @@
 body {
     border: 1px solid rgb(0, 0, 0);
     background-color: #fffefe;
-    font-family: Arial, Helvetica, Courier New monospace;   
-   }
+    color: #4c5454;
+    font-size: 16px;
+    font-family: Courier, monospace;   
+    margin: 0px;
+    padding: 0px;
+}
 
-h1 {
+section h1 {
     text-align: left; /* valeurs possibles : left | right | center | justify */
-    color: rgb(255, 0, 0);
-    font-size: 2em; /* 1em : taille par défaut de la police de caractères défini sur le navigateur */
+    color: rgb(70, 154, 194);
+    font-size: 22px; /* 1em : taille par défaut de la police de caractères défini sur le navigateur */
     font-style: normal; /* valeurs possibles : normal | italic */
     font-weight: bold; /* valeurs possibles : normal | bold */
-    text-decoration: blink; /* valeurs possibles : none | underline | overline | line-through | blink 
-   */
-    text-transform: capitalize; /*text-transform: none | capitalize | uppercase | lowercase */ 
-    line-height: 200%; /*valeurs possibles : normal | nombre | % */ 
-   }
-
-   h2 {
-    text-align: left; /* valeurs possibles : left | right | center | justify */
-    color: rgb(2, 54, 0);
-    font-size: 2em; /* 1em : taille par défaut de la police de caractères défini sur le navigateur */
-    font-style: normal; /* valeurs possibles : normal | italic */
-    font-weight: bold; /* valeurs possibles : normal | bold */
+    padding-left: 20px;
     text-decoration: none; /* valeurs possibles : none | underline | overline | line-through | blink 
    */
     text-transform: capitalize; /*text-transform: none | capitalize | uppercase | lowercase */ 
     line-height: 200%; /*valeurs possibles : normal | nombre | % */ 
    }
+
+   section h2 {
+    text-align: left; /* valeurs possibles : left | right | center | justify */
+    color: rgb(2, 54, 0);
+    font-size: 20px; /* 1em : taille par défaut de la police de caractères défini sur le navigateur */
+    font-style: normal; /* valeurs possibles : normal | italic */
+    font-weight: bold; /* valeurs possibles : normal | bold */
+    padding-left: 50px;
+    text-decoration: none; /* valeurs possibles : none | underline | overline | line-through | blink 
+   */
+    text-transform: capitalize; /*text-transform: none | capitalize | uppercase | lowercase */ 
+    line-height: 200%; /*valeurs possibles : normal | nombre | % */ 
+    margin-left: 50px;
+  }
+
+section p {
+
+    padding-left: 50px;
+}
+
+section ol {
+
+    padding-left: 100px;
+}
+
+section ul {
+
+    padding-left: 100px;
+}
+
+section img#photoJournalLumineux {
+    float: right;
+    width: 400px;
+
+}
