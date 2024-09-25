@@ -1,7 +1,7 @@
-section table {
+ section table {
 
     font-family: Courier, monospace;
-    border-collapse: collapse;
+    border-collapse: separate;
     width: 400px;
     margin: 50px;
 }
@@ -10,6 +10,7 @@ section {
 
     border: 1px;
     padding: 8px;
+
 }
 
 tr:nth-child(even) {
