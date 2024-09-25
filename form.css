@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    font-family: Courier, monospace;
+}
+
+section form {
+
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+section label, select, input {
+
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Courier, monospace;
+    color: #4c5454;
+    font-size: 18px;
+}
+
+section select, input :nth-of-type(submit) {
+
+    box-sizing: border-box;
+    background-color: #ff715b;
+    border: 1px solid #4c5454;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section label, input {
+
+    margin-top: 30px;
+}
+
+section, input :nth-of-type(submit) {
+
+    background-color: #ff715b;
+}
