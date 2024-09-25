@@ -1,0 +1,25 @@
+section table {
+
+    font-family: Courier, monospace;
+    border-collapse: collapse;
+    width: 400px;
+    margin: 50px;
+}
+
+section {
+
+    border: 1px;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+section th {
+
+    padding: 12px 8px 20px 8px;
+    text-align: left;
+    background-color: #ff715b;
+    color: #fffefe;
+}
