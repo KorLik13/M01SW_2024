@@ -78,12 +78,20 @@ section#presentation img#photoJournalLumineux {
 *                                                                                           *
 ********************************************************************************************/
 
-
+table#liste {
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: gray;
+}
 
 section#liste table {
 
     font-family: Courier, monospace;
-    border-collapse: separate;
+    border-collapse: collapse;
     width: 400px;
     margin: 50px;
 }
@@ -92,7 +100,6 @@ section#liste {
     text-align: center;
     border: 1px;
     padding: 8px;
-
 }
 
 tr:nth-child(even) {
@@ -108,7 +115,14 @@ section#liste th {
     padding: 12px 8px 20px 8px;
     text-align: left;
     background-color: #ff715b;
-    color: #fffefe;
+    color: white;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
 }
 
 /********************************************************************************************
@@ -202,12 +216,11 @@ form {
 *                                                                                           *
 ********************************************************************************************/
 
-footer#index div {
-    text-align: center;
+
+li#index {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
 }
 
-header#index, nav#index, footer#index {
-    background-color: #FF715B;
-    color: white;
-}
 
