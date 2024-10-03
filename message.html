@@ -7,25 +7,118 @@
  
     <body>
         <section id="message">
-            <link rel="stylesheet" href="form.css" />
+            <link rel="stylesheet" href="style.css" />
             <h1>Envoi d'un message</h1>
-<form>
+<form action="rest.php" method="post">
 <label for="afiicheur-select">Sélectionner un afficheur : </label>
-<select id="afficheur-select" name="afficheur">
-    <option>CP A</option>
-    <option>CP B</option>
-    <option>CE1 A</option>
-    <option>CE1 B</option>
-    <option>CE2 A</option>
-    <option>CE2 B</option>
-    <option>CM1 A</option>
-    <option>CM1 B</option>
-    <option>CM2 A</option>
-    <option>CM2 B</option>
+<select id="afficheur-select" name="ip_journal">
+    <option value="172.20.21.157">SALLE A6</option>
+    <option value="172.20.21.267">CP B</option>
+    <option value="172.20.21.230">CE1 A</option>
+    <option value="172.20.21.231">CE1 B</option>
+    <option value="172.20.21.158">CE2 A</option>
+    <option value="172.20.21.233">CE2 B</option>
+    <option value="172.20.21.234">CM1 A</option>
+    <option value="172.20.21.235">CM1 B</option>
+    <option value="172.20.21.236">CM2 A</option>
+    <option value="172.20.21.237">CM2 B</option>
 </select>
-<label for="pseudo-select">Votre pseudo : </label>
-<input type="text" id="pseudo-select" name="pseudo">
-<input type="submit" value="Envoyer">
+
+<label for="input-texte">Message à envoyer : </label>
+<input type="text" id="input-texte" name="texte">
+
+<label for="select-effetapparition">Effet d'apparition : </label>
+<select id="select-effetapparition" name="effetapparition">
+    <option value="FA">Immediate</option>
+    <option value="FB">Xopen</option>
+    <option value="FC">Curtain Up</option>
+    <option value="FD">Curtain Down</option>
+    <option value="FE">Scroll Left</option>
+    <option value="FF">Scroll Right</option>
+    <option value="FG">Vopen</option>
+    <option value="FH">Vclose</option>
+    <option value="FI">Scroll Up</option>
+    <option value="FJ">Scroll Down</option>
+    <option value="FK">Hold</option>
+    <option value="FL">Snow</option>
+    <option value="FM">Twinkle</option>
+    <option value="FN">Block Move</option>
+    <option value="FP">Random</option>
+    <option value="FQ">Pen writting 'Hello World'</option>
+    <option value="FR">Pen writting 'Welcome'</option>
+    <option value="FS">Pen writting 'Amplus'</option>
+</select>
+
+<label for="select-effetaffichage">Effet d'affichage : </label>
+<select id="select-effetaffichage" name="effetaffichage">
+    <option value="MA">Normal (Fast)</option>
+    <option value="MB">Blinking (Fast)</option>
+    <option value="MC">Song 1 (Fast)</option>
+    <option value="MD">Song 2 (Fast)</option>
+    <option value="ME">Song 3 (Fast)</option>
+    <option value="MQ">Normal (Middle Fast)</option>
+    <option value="MR">Blinking (Middle Fast)</option>
+    <option value="MS">Song 1 (Middle Fast)</option>
+    <option value="MT">Song 2 (Middle Fast)</option>
+    <option value="MU">Song 3 (Middle Fast)</option>
+    <option value="Ma">Normal (Middel Slow)</option>
+    <option value="Mb">Blinking (Middel Slow)</option>
+    <option value="Mc">Song 1 (Middel Slow)</option>
+    <option value="Md">Song 2 (Middel Slow)</option>
+    <option value="Me">Song 3 (Middel Slow)</option>
+    <option value="Mq">Normal (Slow)</option>
+    <option value="Mr">Blinking (Slow)</option>
+    <option value="Ms">Song 1 (Slow)</option>
+    <option value="Mt">Song 2 (Slow)</option>
+    <option value="Mu">Song 3 (Slow)</option>
+</select>
+
+<label for="select-dureeaffichage">Durée d'affichage : </label>
+<select id="select-dureeaffichage" name="dureeaffichage">
+    <option value="WA">0,5 sec.</option>
+    <option value="WB">1 sec.</option>
+    <option value="WC">2 sec.</option>
+    <option value="WD">3 sec.</option>
+    <option value="WE">4 sec.</option>
+    <option value="WF">5 sec.</option>
+    <option value="WG">6 sec.</option>
+    <option value="WH">7 sec.</option>
+    <option value="WI">8 sec.</option>
+    <option value="WJ">9 sec.</option>
+    <option value="WK">10 sec.</option>
+    <option value="WL">11 sec.</option>
+    <option value="WM">12 sec.</option>
+    <option value="WN">13 sec.</option>
+    <option value="WO">14 sec.</option>
+    <option value="WP">15 sec.</option>
+    <option value="WQ">16 sec.</option>
+    <option value="WR">17 sec.</option>
+    <option value="WS">18 sec.</option>
+    <option value="WT">19 sec.</option>
+    <option value="WU">20 sec.</option>
+    <option value="WV">21 sec.</option>
+    <option value="WW">22 sec.</option>
+    <option value="WX">23 sec.</option>
+    <option value="WY">24 sec.</option>
+    <option value="WZ">25 sec.</option>
+</select>    
+
+<label for="select-effetdisparition">Effet de disparition : </label>
+<select id="select-effetdisparition" name="effetdisparition">
+    <option value="FA">Immediate</option>
+    <option value="FB">Xopen</option>
+    <option value="FC">Curtain Up</option>
+    <option value="FD">Curtain Down</option>
+    <option value="FE">Scroll Left</option>
+    <option value="FF">Scroll Right</option>
+    <option value="FG">Vopen</option>
+    <option value="FH">Vclose</option>
+    <option value="FI">Scroll Up</option>
+    <option value="FJ">Scroll Down</option>
+    <option value="FK">Hold</option>
+</select>
+
+<input type="submit" id="envoi" name="submit_SW06" value="Envoyer">
 </form>
          </section>
  

@@ -1,4 +1,86 @@
- section table {
+
+/********************************************************************************************
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *  
+*                                                                                           *
+*                               STYLE DE SW01 / PRESENTATION                                *  
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *
+********************************************************************************************/
+body {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fffefe;
+    color: #4c5454;
+    font-size: 16px;
+    font-family: Courier, monospace;   
+    margin: 0px;
+    padding: 0px;
+}
+
+section#presentation h1 {
+    text-align: left; 
+    color: rgb(70, 154, 194);
+    font-size: 22px; 
+    font-style: normal;
+    font-weight: bold;
+    padding-left: 20px;
+    text-decoration: none; 
+    text-transform: capitalize; 
+    line-height: 200%;
+   }
+
+   section#presentation h2 {
+    text-align: left;
+    color: rgb(2, 54, 0);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    padding-left: 50px;
+    text-decoration: none; 
+    text-transform: capitalize; 
+    line-height: 200%;
+    margin-left: 50px;
+  }
+
+section#presentation p {
+
+    padding-left: 50px;
+}
+
+section#presentation ol {
+
+    padding-left: 100px;
+}
+
+section#presentation ul {
+
+    padding-left: 100px;
+}
+
+section#presentation img#photoJournalLumineux {
+    float: right;
+    width: 400px;
+
+}
+
+/********************************************************************************************
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *  
+*                                                                                           *
+*                                     STYLE DE SW05 / LISTE                                 *  
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *
+********************************************************************************************/
+
+
+
+section#liste table {
 
     font-family: Courier, monospace;
     border-collapse: separate;
@@ -6,8 +88,8 @@
     margin: 50px;
 }
 
-section {
-
+section#liste {
+    text-align: center;
     border: 1px;
     padding: 8px;
 
@@ -17,10 +99,115 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-section th {
+section#liste tr:hover {
+    background-color: #dddddd;
+}
+
+section#liste th {
 
     padding: 12px 8px 20px 8px;
     text-align: left;
     background-color: #ff715b;
     color: #fffefe;
 }
+
+/********************************************************************************************
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *  
+*                                                                                           *
+*                                   STYLE DE SW02 / MESSAGE                                 *  
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *
+********************************************************************************************/
+
+
+h2#message {
+    text-align: center;
+    font-family: Courier, monospace;
+    color: black;
+}
+
+
+section#message form {
+
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+section#message label, section#message select, section#message input {
+
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Courier, monospace;
+    color: #4c5454;
+    font-size: 18px;
+}
+
+
+section#message select, section#message input {
+
+    box-sizing: border-box;
+    background-color: #dddddd;
+    border: 1px solid #4c5454;
+    color: black;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+label, section#message {
+
+    margin-top: 30px;
+}
+
+section#message input {
+
+    background-color: #ff715b;
+}
+
+section#message input#pseudo-select {
+
+    background-color: #dddddd;
+}
+
+section#message input:hover {
+    background-color: #dd5f4c;
+}
+
+form {
+    display:block;
+    margin-top: 0cm;
+    unicode-bidi: isolate;
+}
+
+
+/********************************************************************************************
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *  
+*                                                                                           *
+*                                   STYLE DE SW07 / INDEX                                   *  
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *
+*                                                                                           *
+********************************************************************************************/
+
+footer#index div {
+    text-align: center;
+}
+
+header#index, nav#index, footer#index {
+    background-color: #FF715B;
+    color: white;
+}
+
